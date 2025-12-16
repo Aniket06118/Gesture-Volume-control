@@ -45,7 +45,7 @@ while True:
         volbar=np.interp(length,[40,350],[400,150])
         volper=np.interp(length,[40,350],[0,100])
         #print(vol)
-        volume.SetMasterVolumeLevel(vol, None)              # uncomment while running
+        #volume.SetMasterVolumeLevel(vol, None)              # uncomment while running
 
         if length<40:
             cv2.circle(img,(int((x1+x2)/2),int((y1+y2)/2)),15,(0,255,0),cv2.FILLED)
